@@ -3,6 +3,10 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap" rel="stylesheet">
+
 	<title>Skvělá cukrárna (standarní obtížnost)</title>
 
 	<!-- Naše vlastní CSS -->
@@ -12,9 +16,9 @@
 
 	<!-- Hlavička -->
 	<header>
-		<img src="images/logo.svg" alt="logo Skvělá cukrárna">
+		<img class="logo" src="images/logo.svg" alt="logo Skvělá cukrárna">
 
-		<ul>
+		<ul class="menu">
 			<li><a href="#">Nabídka dortů</a></li>
 			<li><a href="#">Blog</a></li>
 			<li><a href="#">O nás</a></li>
@@ -27,12 +31,13 @@
 
 	<!-- Hero sekce s obrázkem a hlavním nadpisem -->
 	<section class="sekce hero">
-		<h1>Sladké potěšení z&nbsp;kvalitních surovin</h1>
+		<div class="hero-text">
+		<h1>Sladké potěšení <br> z&nbsp;kvalitních surovin</h1>
 
 		<p>
 			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
 		</p>
-
+		</div>
 	</section>
 
 
@@ -46,12 +51,13 @@
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
 				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus officia minima reiciendis beatae, quo consequatur blanditiis molestiae laborum, at porro ipsum soluta temporibus.</p>
 
-				<a href="#">Naše výrobky</a>
-			
+				<div class="tlacitko">
+					<a href="#">Naše výrobky</a>
+				</div>
 			</div>
 
 			<!-- pravý sloupec -->
-				<img class="cukrark" src="images/cukrarka.jpg" alt="cukrářka">
+				<img class="cukrarka" src="images/cukrarka.jpg" alt="cukrářka">
 			
 	</section>
 
@@ -59,39 +65,41 @@
 
 	<!-- sekce Dnešní nabídka -->
 
-	<section class="sekce nabidka">
-		<h2>Dnešní nabídka</h2>
-		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+	<section class="sekce offer">
+			<div class="nabidka">
+				<div class="nabidka-text">
+				<h2>Dnešní nabídka</h2>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+					</div>
+				<div class="produkty">
+				<!-- produkt 1 -->
+					<div class=" produkt prvni">
+						<img src="images/dort.jpg" alt="Šlehačkový dort s malinami">
+						<h3>Malinový dort</h3>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+					</div>
 
-			<div class="produkty">
-			<!-- produkt 1 -->
-				<div class=" produkt prvni">
-					<img src="images/dort.jpg" alt="Šlehačkový dort s malinami">
-					<h3>Malinový dort</h3>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-				</div>
+					<!-- produkt 2 -->
+					<div class=" produkt druhy">
+						<img src="images/livance.jpg" alt="Lívance s ovocem">
+						<h3>Lívance s ovocem</h3>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+					</div>
 
-				<!-- produkt 2 -->
-				<div class=" produkt druhy">
-					<img src="images/livance.jpg" alt="Lívance s ovocem">
-					<h3>Lívance s ovocem</h3>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+					<!-- produkt 3 -->
+					<div class=" produkt treti">
+						<img src="images/kolac.jpg" alt="Dýňový koláč">
+						<h3>Dýňový koláč</h3>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+					</div>
+					
+					<!-- produkt 4 -->
+					<div class=" produkt ctvrty">
+						<img src="images/buchticka.jpg" alt="Buchtička s polevou">
+						<h3>Buchtička s polevou</h3>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+					</div>
 				</div>
-
-				<!-- produkt 3 -->
-				<div class=" produkt treti">
-					<img src="images/kolac.jpg" alt="Dýňový koláč">
-					<h3>Dýňový koláč</h3>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-				</div>
-				
-				<!-- produkt 4 -->
-				<div class=" produkt ctvrty">
-					<img src="images/buchticka.jpg" alt="Buchtička s polevou">
-					<h3>Buchtička s polevou</h3>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-				</div>
-
 			</div>
 	</section>
 
